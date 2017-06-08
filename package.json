@@ -1,0 +1,97 @@
+{
+  "name": "CRA-components-development",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "author": {
+    "name": "Andrii Los",
+    "email": "puha212@gmail.com",
+    "url": "https://twitter.com/RIP212"
+  },
+  "keywords": [
+    "components",
+    "react",
+    "react-component",
+    "toolkit"
+  ],
+  "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
+    "demo:start": "react-scripts start",
+    "demo:build": "react-scripts build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom",
+    "test:watch": "react-scripts test --env=jsdom",
+    "test:coverage": "npm test -- --coverage",
+    "prettier": "prettier --write src/*.js",
+    "eslint": "eslint ./src",
+    "prestylecheck": "run-s prettier",
+    "stylecheck": "run-p stylelint eslint",
+    "clean": "rimraf lib",
+    "build:css": "cpx \"./src/components/**/*.css\" ./lib",
+    "build:es6": "cross-env NODE_ENV=production babel src/components --out-dir lib --ignore test.js,
+    "prebuild": "run-p stylecheck test clean",
+    "build": "run-p build:*",
+    "postbuild": "node scripts/copyBuildFiles.js",
+    "stylelint": "stylelint src/*.js",
+    "prerelease": "npm run build",
+    "release": "cd lib && npm publish"
+  },
+  "dependencies": {
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "semantic-ui-css": "^2.2.10",
+    "semantic-ui-react": "^0.68.5",
+    "styled-components": "^2.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.23.0",
+    "cpx": "^1.5.0",
+    "cross-env": "^5.0.0",
+    "enzyme": "^2.8.2",
+    "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.1.1",
+    "eslint-plugin-prettier": "^2.1.1",
+    "husky": "^0.13.4",
+    "jest-enzyme": "^3.2.0",
+    "lint-staged": "^3.6.0",
+    "npm-run-all": "^4.0.2",
+    "prettier": "^1.4.2",
+    "prop-types": "latest",
+    "react-scripts": "1.0.7",
+    "react-styleguidist": "^5.3.2",
+    "react-test-renderer": "^15.5.4",
+    "rimraf": "^2.6.1",
+    "stylelint": "^7.10.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-processor-styled-components": "^0.1.0",
+    "webpack": "^2.6.1"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "files": [
+    "lib"
+  ],
+  "jest": {
+    "collectCoverageFrom": [
+      "src/components/**/*.{js,jsx}",
+      "!src/components/index.js"
+    ]
+  },
+  "stylelint": {
+    "processors": [
+      "stylelint-processor-styled-components"
+    ],
+    "extends": "stylelint-config-standard",
+    "syntax": "scss"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier"
+    ]
+  }
+}

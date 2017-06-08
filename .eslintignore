@@ -1,0 +1,5 @@
+/tests/**
+nightwatch.config.js
+test-setup.js
+src/resources/**
+/lib/
