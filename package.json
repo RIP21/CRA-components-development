@@ -30,7 +30,7 @@
     "stylecheck": "run-p stylelint eslint",
     "clean": "rimraf lib",
     "build:css": "cpx \"./src/components/**/*.css\" ./lib",
-    "build:es6": "cross-env NODE_ENV=production babel src/components --out-dir lib --ignore test.js,
+    "build:es6": "cross-env NODE_ENV=production babel src/components --out-dir lib --ignore test.js",
     "prebuild": "run-p stylecheck test clean",
     "build": "run-p build:*",
     "postbuild": "node scripts/copyBuildFiles.js",
@@ -68,14 +68,14 @@
     "stylelint-processor-styled-components": "^0.1.0",
     "webpack": "^2.6.1"
   },
+  "files": [
+    "lib"
+  ],
   "babel": {
     "presets": [
       "react-app"
     ]
   },
-  "files": [
-    "lib"
-  ],
   "jest": {
     "collectCoverageFrom": [
       "src/components/**/*.{js,jsx}",

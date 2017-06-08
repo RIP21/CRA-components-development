@@ -1,4 +1,5 @@
-#create-react-app components development
+
+# create-react-app for components development
 Is a minimal yet another  boilerplate based on top of the famous 
 create-react-app, made especially for creating components libraries with 
 rich online docs powered by Styleguidist and all power of CRA.
@@ -20,7 +21,7 @@ rich online docs powered by Styleguidist and all power of CRA.
  - lint-staged installed for running prettier before any commit. 
  So no wrong codestyle will leak into the codebase!
 
-##Commands
+## Commands
 To develop components run
 ```bash
 npm run styleguide 
@@ -45,7 +46,7 @@ Also you can run `test, test:coverage,
 (stylelint, eslint, prettier) -> stylecheck, demo:start / build` for your 
 amazing landing page for your component lib
 
-##More details
+## More details
 As an example in boilerplate there is a `semantic-ui` Button component
 with `semantic-ui-css` imported to styleguidist.
 Landing page is empty styled with `styled-components`.
@@ -62,7 +63,7 @@ and also for testing your components library, collect test coverage on them etc.
 All setup this way so they will run only on `src/components` and will ignore all other 
 folders which are not related to components library.
 
-##More on release process
+## More on release process
 Basically when you run `npm run release`
 It will run prettier, all linters, then all tests, and after all will bundle
 ignoring `test.js` your components. After that it will generate `package.json` for
