@@ -1,15 +1,15 @@
 [![Build Status](https://travis-ci.org/RIP21/CRA-components-development.svg?branch=master)](https://travis-ci.org/RIP21/CRA-components-development)
-# create-react-app for components development
+# [create-react-app](https://github.com/facebookincubator/create-react-app) for components development
 Is a minimal yet another  boilerplate based on top of the famous 
 create-react-app, made especially for creating components libraries with 
-rich online docs powered by Styleguidist and all power of CRA.
+rich online docs powered by [Styleguidist](https://github.com/styleguidist/react-styleguidist) and all power of CRA.
  
  ### Includes: 
- - stylelint of `styled-components` 
- - prettier 
+ - stylelint of [styled-components](https://github.com/styled-components/styled-components) 
+ - [prettier](https://github.com/prettier/prettier) 
  - eslint
- - create-react-app 
- - babel with CRA preset for components libs transpiling
+ - [create-react-app](https://github.com/facebookincubator/create-react-app)
+ - babel with [CRA preset](https://www.npmjs.com/package/babel-preset-react-app) for components libs transpiling
  - Scripts for publishing components with ES6 imports support
  - Publishing script for handy 
  ```javascript 
@@ -18,7 +18,7 @@ rich online docs powered by Styleguidist and all power of CRA.
  imports. Which means no import of unnecessary components! 
  And also tree shaking!
  - Enzyme with `jest-enzyme` goodness!
- - lint-staged installed for running prettier before any commit. 
+ - [lint-staged 💩](https://github.com/okonet/lint-staged) installed for running prettier before any commit. 
  So no wrong codestyle will leak into the codebase!
  - GitHub pages styleguide automatic deploy right after next release
 
@@ -47,7 +47,7 @@ amazing landing page for your component lib and other commands
 which are pretty descriptive but just a part of the release/build process :)
 
 ## More details
-As an example in boilerplate there is a `semantic-ui` Button component
+As an example in boilerplate there is a `semantic-ui-react` Button component
 with `semantic-ui-css` imported to styleguidist.
 Landing page is empty styled with `styled-components`.
 
