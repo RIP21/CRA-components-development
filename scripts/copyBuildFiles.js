@@ -1,9 +1,14 @@
 var path = require("path");
 var fse = require("fs-extra");
+var fs = require('fs');
 
-const files = ["README.md", "LICENSE"];
+const files = ["LIBRARY.md", "LICENSE"];
 
-Promise.all(files.map(file => copyFile(file))).then(() => createPackageFile());
+Promise.all(files.map(file => copyFile(file)))
+  .then(() => createPackageFile()
+    .then(renameLibraryToReadme(files[0]))
+  );
+
 
 function copyFile(file) {
   const libPath = resolveBuildPath(file);
@@ -13,6 +18,17 @@ function copyFile(file) {
       resolve();
     });
   }).then(() => console.log(`Copied ${file} to ${libPath}`));
+}
+
+function renameLibraryToReadme(file) {
+  const libPath = resolveBuildPath(file);
+  fs.rename(
+    `${libPath}`,
+    path.resolve(__dirname, "../lib/", "README.md"),
+    err => {
+      if (err) throw err;
+      console.log(`Renamed ${file} to README.md`)
+    });
 }
 
 function resolveBuildPath(file) {

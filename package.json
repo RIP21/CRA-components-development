@@ -39,7 +39,7 @@
     "predeploy:docs": "npm run styleguide:build",
     "deploy:docs": "gh-pages -d styleguide",
     "prerelease": "npm run build",
-    "release": "cd lib && npm publish && npm run deploy:docs"
+    "release": "cd lib && npm publish && cd .. && npm run deploy:docs"
   },
   "dependencies": {
     "gh-pages": "^1.0.0",

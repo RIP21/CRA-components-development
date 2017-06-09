@@ -52,3 +52,4 @@ npm-debug.log.*
 /.vscode/
 /lib/
 /.env.local
+/styleguide/

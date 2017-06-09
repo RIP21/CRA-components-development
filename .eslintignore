@@ -3,3 +3,4 @@ nightwatch.config.js
 test-setup.js
 src/resources/**
 /lib/
+/styleguide/
