@@ -2,6 +2,7 @@
   "name": "CRA-components-development",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://rip21.github.io/CRA-components-development/",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -17,15 +18,16 @@
     "toolkit"
   ],
   "scripts": {
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
     "demo:start": "react-scripts start",
     "demo:build": "react-scripts build",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "cross-env CI=true react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "test:coverage": "npm test -- --coverage",
     "prettier": "prettier --write src/*.js",
     "eslint": "eslint ./src",
+    "stylelint": "stylelint src/*.js",
     "prestylecheck": "run-s prettier",
     "stylecheck": "run-p stylelint eslint",
     "clean": "rimraf lib",
@@ -34,11 +36,13 @@
     "prebuild": "run-p stylecheck test clean",
     "build": "run-p build:*",
     "postbuild": "node scripts/copyBuildFiles.js",
-    "stylelint": "stylelint src/*.js",
+    "predeploy:docs": "npm run styleguide:build",
+    "deploy:docs": "gh-pages -d styleguide",
     "prerelease": "npm run build",
-    "release": "cd lib && npm publish"
+    "release": "cd lib && npm publish && npm run deploy:docs"
   },
   "dependencies": {
+    "gh-pages": "^1.0.0",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "semantic-ui-css": "^2.2.10",

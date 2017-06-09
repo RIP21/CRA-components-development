@@ -49,7 +49,7 @@ function createPackageFile() {
       } = packageData;
 
       const minimalPackage = {
-        name: "generic-componentsui", // Change it to your components name
+        name: "generic-components", // Change it to your components name
         author,
         version,
         description,
