@@ -42,8 +42,7 @@ To publish your lib run (which also will run a build process)
 npm run release
 ```
 
-Also you can run `build, test, test:coverage, 
-(stylelint, eslint, prettier) -> stylecheck, demo:start / build` for your 
+Also you can run `build, (stylelint, eslint, prettier) -> stylecheck, demo:start / build` for your 
 amazing landing page for your component lib and other commands 
 which are pretty descriptive but just a part of the release/build process :)
 
@@ -86,4 +85,4 @@ bash: /dev/tty: No such device or address
 error: failed to execute prompt script (exit code 1)
 fatal: could not read Username for 'https://github.com': Invalid argument
 ```
-To successfully run in on Windows please use git bash or cygwin or anything that simulates linux bash.
+To successfully run it on Windows please use git bash or cygwin or anything that simulates linux bash.
