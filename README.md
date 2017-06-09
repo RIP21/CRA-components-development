@@ -5,6 +5,7 @@ create-react-app, made especially for creating components libraries with
 rich online docs powered by [Styleguidist](https://github.com/styleguidist/react-styleguidist) and all power of CRA.
  
  ### Includes: 
+ - [Styleguidist](https://github.com/styleguidist/react-styleguidist) for automatic styleguide docs generation
  - stylelint of [styled-components](https://github.com/styled-components/styled-components) 
  - [prettier](https://github.com/prettier/prettier) 
  - eslint
