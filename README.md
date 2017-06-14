@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/RIP21/CRA-components-development.svg?branch=master)](https://travis-ci.org/RIP21/CRA-components-development)
 # [create-react-app](https://github.com/facebookincubator/create-react-app) for components development
 
+[![Build Status](https://travis-ci.org/RIP21/CRA-components-development.svg?branch=master)](https://travis-ci.org/RIP21/CRA-components-development)
 [![Greenkeeper badge](https://badges.greenkeeper.io/RIP21/CRA-components-development.svg)](https://greenkeeper.io/)
 Is a minimal yet another  boilerplate based on top of the famous 
 create-react-app, made especially for creating components libraries with 
