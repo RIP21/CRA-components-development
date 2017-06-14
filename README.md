@@ -18,7 +18,7 @@ rich online docs powered by [Styleguidist](https://github.com/styleguidist/react
  ``` 
  imports. Which means no import of unnecessary components! 
  And also tree shaking!
- - Enzyme with `jest-enzyme` goodness!
+ - Enzyme with `jest-enzyme` and `jest-styled-components` goodness!
  - [lint-staged 💩](https://github.com/okonet/lint-staged) installed for running prettier before any commit. 
  So no wrong codestyle will leak into the codebase!
  - GitHub pages styleguide automatic deploy right after next release
