@@ -64,7 +64,7 @@
     "npm-run-all": "^4.0.2",
     "prettier": "^1.4.2",
     "prop-types": "latest",
-    "react-scripts": "1.0.7",
+    "react-scripts": "1.0.8",
     "react-styleguidist": "^5.4.4",
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.1",
