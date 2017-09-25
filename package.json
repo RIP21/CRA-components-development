@@ -45,7 +45,7 @@
     "react": "^15.6.0",
     "react-dom": "^15.6.0",
     "semantic-ui-css": "^2.2.10",
-    "semantic-ui-react": "^0.73.0",
+    "semantic-ui-react": "^0.74.0",
     "styled-components": "^2.0.0"
   },
   "devDependencies": {
