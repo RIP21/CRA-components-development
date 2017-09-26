@@ -42,7 +42,7 @@
     "release": "cd lib && npm publish && cd .. && npm run deploy:docs"
   },
   "dependencies": {
-    "react": "^15.6.0",
+    "react": "^16.0.0",
     "react-dom": "^15.6.0",
     "semantic-ui-css": "^2.2.10",
     "semantic-ui-react": "^0.74.0",
