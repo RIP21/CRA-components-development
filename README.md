@@ -11,7 +11,7 @@ rich online docs powered by [Styleguidist](https://github.com/styleguidist/react
  - stylelint of [styled-components](https://github.com/styled-components/styled-components) 
  - [prettier](https://github.com/prettier/prettier) 
  - eslint
- - [create-react-app](https://github.com/facebookincubator/create-react-app)
+ - [create-react-app](https://github.com/facebookincubator/create-react-app) with `react-app-rewired`
  - babel with [CRA preset](https://www.npmjs.com/package/babel-preset-react-app) for components libs transpiling
  - Scripts for publishing components with ES6 imports support
  - Publishing script for handy 
