@@ -11,8 +11,9 @@ rich online docs powered by [Styleguidist](https://github.com/styleguidist/react
  - stylelint of [styled-components](https://github.com/styled-components/styled-components) 
  - [prettier](https://github.com/prettier/prettier) 
  - eslint
- - [create-react-app](https://github.com/facebookincubator/create-react-app) with `react-app-rewired`
- - babel with [CRA preset](https://www.npmjs.com/package/babel-preset-react-app) for components libs transpiling
+ - [create-react-app](https://github.com/facebookincubator/create-react-app)
+ - [react-app-rewired](https://github.com/timarney/react-app-rewired)
+ - babel with CRA preset and ENV preset (https://www.npmjs.com/package/babel-preset-react-app) for components libs transpiling
  - Scripts for publishing components with ES6 imports support
  - Publishing script for handy 
  ```javascript 
@@ -50,8 +51,7 @@ amazing landing page for your component lib and other commands
 which are pretty descriptive but just a part of the release/build process :)
 
 ## More details
-As an example in boilerplate there is a `semantic-ui-react` Button component
-with `semantic-ui-css` imported to styleguidist.
+As an example in boilerplate there is a `normalize.css` imported to styleguidist.
 Landing page is empty styled with `styled-components`.
 
 Since I use `styled-components` every day. There is also stylelint with 

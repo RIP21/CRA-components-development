@@ -1,16 +1,23 @@
-import React, { Component } from 'react'
-import { Button } from 'components/index'
+import React from 'react'
+import PT from 'prop-types'
+import { Button } from 'components'
 import styled from 'styled-components'
+import 'normalize.css/normalize.css'
 
-class App extends Component {
-  render() {
-    return (
-      <div className={this.props.className}>
-        <Button>Hello World!</Button>
-      </div>
-    )
-  }
+const App = ({ className }) => (
+  <div className={className}>
+    <Button>Hello World!</Button>
+  </div>
+)
+
+App.propTypes = {
+  className: PT.string,
 }
+
+App.defaultProps = {
+  className: '',
+}
+
 export default styled(App)`
   padding: 1rem;
   height: 100vh;
