@@ -63,7 +63,7 @@
     "gh-pages": "^1.1.0",
     "husky": "^0.14.3",
     "jest-enzyme": "^4.0.1",
-    "jest-styled-components": "^4.9.0",
+    "jest-styled-components": "^5.0.0",
     "lint-staged": "^6.0.0",
     "npm-run-all": "^4.1.2",
     "prettier": "^1.8.2",
