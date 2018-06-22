@@ -57,7 +57,7 @@
     "cross-env": "^5.1.1",
     "enzyme": "^3.2.0",
     "enzyme-adapter-react-16": "^1.1.0",
-    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb": "^17.0.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.3.1",
     "gh-pages": "^1.1.0",
