@@ -76,7 +76,7 @@
     "react-styleguidist": "^6.0.33",
     "react-test-renderer": "^16.1.1",
     "rimraf": "^2.6.2",
-    "styled-components": "^2.2.3",
+    "styled-components": "^4.2.1",
     "stylelint": "^8.3.1",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-processor-styled-components": "^1.1.1"
